@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+
+    <!-- Roboto font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
+
+    <!-- My styles -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="modal-window-background" class="bg-modal" hidden>
+        <div class="box-modal">
+            <form> 
+                <div class="input__container">
+                    <div class="name-input input">
+                        <label for="name-input-modal">Name:</label>
+                        <input id="name-input-modal" />
+                    </div>
+                    <div class="input">
+                        <label for="duration-input-modal">Duration(min):</label>
+                        <input id="duration-input-modal" />
+                    </div>
+                    <div class="reviews-input input">
+                        <label for="reviews-input-modal">Number of reviews:</label>
+                        <input id="reviews-input-modal" />
+                    </div>
+                    <p id="error-message-modal" hidden></p>
+                </div>
+                <button id="submit-button-modal" type="submit" title="Submit" class="button submit-button-modal">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+    
+    <div class="container">
+        <form>
+            <h2>Add movies</h2>
+            <div class="input__container">
+                <div class="name-input input">
+                    <label for="name-input">Name:</label>
+                    <input id="name-input" />
+                </div>
+                <div class="input">
+                    <label for="duration-input">Duration(min):</label>
+                    <input id="duration-input" />
+                </div>
+                <div class="reviews-input input">
+                    <label for="reviews-input">Number of reviews:</label>
+                    <input id="reviews-input" />
+                </div>
+                <p id="error-message" hidden></p>
+            </div>
+
+            <button id="submit-button" type="submit" title="Submit" class="button">
+                Submit
+            </button>
+            <h1 id="total-reviews">Total reviews:</h1>
+        </form>
+
+        <ul id="items-container"></ul>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+
+</html>
